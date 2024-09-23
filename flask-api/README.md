@@ -13,9 +13,14 @@
 ### Usage:
 1. You can GET all users with the `/members` endpoint
 2. You can GET a specific user with `/members/{id}` where `{id}` is a number
+    - If the ID doesn't exist, user will be notified
 3. You can POST a new member with `/members`
+    - All relevant fields must be filled
 4. You can DELETE a member with `/members/{id}` where `{id}` is a number
+    - If the ID doesn't exist, user will be notified
 5. You can PATCH a member with `/members/{id}` where `{id}` is a number
+    - If the ID doesn't exist, user will be notified
+    - Must have correct fields to be updated
 6. Any changes is saved to the `database.db` file
 7. When using GET, it will attempt to fetch the users public GitHub repos:
     - Will notify if the username doesn't exist
