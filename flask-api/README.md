@@ -1,4 +1,4 @@
-# Flask API øvelse
+# Flask API exercise
 
 ### Setup:
 1. Clone the git repo and move to the correct directory:
