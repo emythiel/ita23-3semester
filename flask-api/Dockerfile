@@ -1,8 +1,8 @@
 # Base image
 FROM python:alpine3.20
 
-# Copy all files from flask_api to app in image
-COPY ./flask_api /app
+# Copy all files from flask_api to app in Docker image
+COPY . /app
 
 # Change dir (CD)
 WORKDIR /app
