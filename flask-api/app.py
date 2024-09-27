@@ -177,4 +177,4 @@ def update_member(id):
     return show_result(updated_member)
 
 
-app.run()
+app.run(host=0.0.0.0)
