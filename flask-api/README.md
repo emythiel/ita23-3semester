@@ -3,20 +3,32 @@
 
 ### Setup (Docker):
 1. Build the image and tag it as emy-flask-api:
-```docker build -t emy-flask-api https://github.com/Emythiel/ita23-3semester.git#main:flask-api```
-2. Run the image:
-```docker run -it --rm -p 5000:5000 emy-flask-api```
+```
+docker build -t emy-flask-api https://github.com/Emythiel/ita23-3semester.git#main:flask-api
+```
+3. Run the image:
+```
+docker run -it --rm -p 5000:5000 emy-flask-api
+```
 
 
 ### Setup (Standard):
 1. Clone the git repo and move to the correct directory:
-```git clone https://github.com/Emythiel/ita23-3semester.git && cd flask-api```
-2. Make sure the proper dependencies are installed:
-```pip install -r requirements.txt```
-3. Create a database and populare it with randomly generated info:
-```python app_database_create.py```
-4. Launch the app:
-```python app.py```
+```
+git clone https://github.com/Emythiel/ita23-3semester.git && cd flask-api
+```
+3. Make sure the proper dependencies are installed:
+```
+pip install -r requirements.txt
+```
+5. Create a database and populare it with randomly generated info:
+```
+python app_database_create.py
+```
+7. Launch the app:
+```
+python app.py
+```
 
 ### Usage:
 1. You can GET all users with the `/members` endpoint
