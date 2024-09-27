@@ -1,6 +1,14 @@
 # Flask API exercise
 
-### Setup:
+
+### Setup (Docker):
+1. Build the image and tag it as emy-flask-api:
+```docker build -t emy-flask-api https://github.com/Emythiel/ita23-3semester.git#main:flask-api```
+2. Run the image:
+```docker run -it --rm -p 5000:5000 emy-flask-api```
+
+
+### Setup (Standard):
 1. Clone the git repo and move to the correct directory:
 ```git clone https://github.com/Emythiel/ita23-3semester.git && cd flask-api```
 2. Make sure the proper dependencies are installed:
