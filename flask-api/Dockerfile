@@ -10,8 +10,8 @@ WORKDIR /app
 # Install dependencies
 RUN pip install -r requirements.txt
 
-# Open port 420
-EXPOSE 420
+# Open port 5000
+EXPOSE 5000
 
 # Start command when container runs
 CMD [ "python", "app.py" ]
