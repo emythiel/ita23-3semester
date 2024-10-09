@@ -12,7 +12,7 @@ docker run -it --rm -p 5000:5000 currency-service
 ```
 
 ## Usage:
-API endpoint:
+API endpoint (GET request):
 ```
 localhost:5000/currency/{currency}/{price}
 ```
