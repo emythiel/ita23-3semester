@@ -1,5 +1,6 @@
 import requests
 from flask import Flask, jsonify, Response
+import currency_list
 
 app = Flask(__name__)
 
@@ -11,12 +12,13 @@ def convert_usd(currency):
 
     if response.status_code == 200:
         currency_data = response.json()
-        #print(currency_data['rates'][f'{currency}'])
         return currency_data['rates'][f'{currency.upper()}']
 
-#convert_usd('EUR')
 @app.route('/currency/<string:currency>/<int:price>')
 def get_currency(price, currency):
+    if currency.upper() not in currency_list.currency:
+        return jsonify({'error': 'invalid currency entered'}), 400
+
     rate = convert_usd(currency)
     converted_price = price * rate
     return jsonify({
