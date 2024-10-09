@@ -3,12 +3,12 @@
 ## Setup Docker
 1. Build image:
 ```
-docker built -t currency_service https://github.com/Emythiel/ita23-3semester.git#main:micro-services/currency_service
+docker build -t currency-service https://github.com/Emythiel/ita23-3semester.git#main:micro-services/currency_service
 ```
 
 2. Run the image:
 ```
-docker run -it --rm -p 5000:5000 currency_service
+docker run -it --rm -p 5000:5000 currency-service
 ```
 
 ## Usage:
