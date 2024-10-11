@@ -8,7 +8,10 @@ docker build -t currency-service https://github.com/Emythiel/ita23-3semester.git
 
 2. Run the image:
 ```
-docker run -it --rm -p {hostport}:5000 currency-service
+docker run -d \
+  -p {hostport}:5000 \
+  --name currency-service \
+  currency-service
 ```
 Where `{hostport}` is the port you wish to use on your machine.
 
