@@ -22,7 +22,7 @@ def get_currency(price, currency):
     rate = convert_usd(currency)
     converted_price = price * rate
     return jsonify({
-        'currency': f'{converted_price}'
+        'currency': converted_price
         })
 
 app.run(host="0.0.0.0")
