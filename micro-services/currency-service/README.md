@@ -3,7 +3,7 @@
 ## Setup Docker
 1. Build image:
 ```
-docker build -t currency-service https://github.com/Emythiel/ita23-3semester.git#main:micro-services/currency_service
+docker build -t currency-service https://github.com/Emythiel/ita23-3semester.git#main:micro-services/currency-service
 ```
 
 2. Run the image:
@@ -15,6 +15,6 @@ Where `{hostport}` is the port you wish to use on your machine.
 ## Usage:
 API endpoint (GET request):
 ```
-localhost:5000/currency/{currency}/{price}
+/currency/{currency}/{price}
 ```
 Where `{currency}` is the 3 letter currency (eg. GBP, EUR, DKK etc.), and `{price}` is the price in USD.
